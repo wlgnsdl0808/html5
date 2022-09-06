@@ -10,27 +10,90 @@
     이미지 5개 이상 - jpg(jfif), png, gif, webp, svg
     <div class="wrap">
         <ul>
-            <li><img src="../temp/cat.jpg" alt="고양이" title="고양이"></li>
-            <li><img src="../temp/cloudy.png" alt="구름" title="구름"></li>
-            <li><img src="../temp/difference.png" alt="종이비행기" title="종이비행기"></li>
-            <li><img src="../temp/fox.png" alt="여우" title="여우"></li>
-            <li><img src="../temp/planet.jpg" alt="행성" title="행성"></li>
+            <li><img src="../temp/cat.jpg" width="800" height="600" alt="고양이" title="고양이"></li>
+            <li><img src="../temp/cloudy.png" width="800" height="600" alt="구름" title="구름"></li>
+            <li><img src="../temp/difference.png" width="800" height="600" alt="종이비행기" title="종이비행기"></li>
+            <li><img src="../temp/fox.png" width="800" height="600" alt="여우" title="여우"></li>
+            <li><img src="../temp/planet.jpg" width="800" height="600" alt="행성" title="행성"></li>
         </ul>
     </div>
     동영상 3개 이상 - mp4, webm, ogv
     <div>
         <ul>
             <li>
-                <video src="../temp/싸이(PSY) - 예술이야 [가사_Lyrics].f137.mp4" controls autoplay muted></video>
+                <video src="../temp/l3.mp4" width="800" height="600" controls autoplay muted loop></video>
+                <div class="comment">
+                    <h3>video 요소의 태그 속성</h3>
+                    <p>src : 해당 비디오 파일의 경로(위치와 파일명)</p>
+                    <p>poster : 대기화면(썸네일) 이미지의 파일 경로</p>
+                    <p>controls : 비디오 재생 제어 패널 표시</p>
+                    <p>autoplay : 자동재생</p>
+                    <p>mute : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>loop : 반복 재생</p>
+                    <p>width : 폭, height : 높이</p>
+                </div>
             </li>
             <li>
-                <video src="../temp/산들 - 취기를 빌려 (취향저격 그녀 X 산들) - 가사.mp4" poster="../temp/cat.jpg" muted></video>
+                <video width="800" height="600" controls loop>
+                    <source src="../temp/l1.mp4" type="video/mp4">
+                    <source src="../temp/l1.Webm" type="video/webm">
+                    <source src="../temp/l1.ogv" type="video/ogg">
+                </video>
+                <div class="comment">
+                    <h3>브라우저 마다 재생가능한 파일</h3>
+                    <p>mp4, webm, ogv 파일이 브라우저 마다 각기 다르게 재생 기능 제공됨</p>
+                    <table>
+                        <thead border="1">
+                            <tr><th>브라우저</th><th>MP4</th><th>WebM</th><th>ogv</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Internet Explorer</td><td>YES</td><td>No</td><td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Chrome</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>Firefox</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                            <tr>
+                                <td>Safari</td><td>YES</td><td>No</td><td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Opera</td><td>YES</td><td>YES</td><td>YES</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </li>
             <li>
-                <video src="../temp/[Official] 이석훈 - 바보에게 바보가 Live ver_1.mp4" poster="../temp/cloudy.png" muted></video>
+                <iframe width="753" height="424" src="https://www.youtube.com/embed/xXkK1GHZK78" title="1시간 l 이석훈 - 바보에게 바보가 (웹툰 '연애의 발견' X 이석훈) / 가사 Lyrics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
         </ul>
     </div>
-    사운드 3개 이상 - mp3, ogg, wav
+    <h2>사운드 3개 이상 - mp3, ogg, wav</h2>
+    <div class="wrap">
+        <ul>
+            <li><audio src="../temp/l3.mp3" autoplay controls muted loop></audio></li>
+            <dvi class="comment">
+                <h3>audio 요소의 태그 속성</h3>
+                    <p>src : 해당 비디오 파일의 경로(위치와 파일명)</p>
+                    <p>controls : 비디오 재생 제어 패널 표시</p>
+                    <p>autoplay : 자동재생</p>
+                    <p>mute : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>loop : 반복 재생</p>
+            </dvi>
+            <li>
+                <audio controls loop>
+                <source src="../temp/l1.mp3" type="audio/mp3">
+                <source src="../temp/l1.wav" type="audio/wav">
+                <source src="../temp/l1.ogg" type="audio/ogg">
+                </audio>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
